@@ -53,7 +53,7 @@ otherwise.
 
 def main():
 
-    api_token = get_env_var_checked("DISCORD_API_TOKEN")
+    api_token = get_env_var_checked("DISCORD_API_KEY")
 
     try:
         assert api_token != False
