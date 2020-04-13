@@ -7,15 +7,16 @@ will reply with a result.
 
 ## functionality
 
-` user: $roll 3d6
-  dicebot: [1, 5, 1]
-  user: $roll 3d6t
-  dicebot: 10
-  user: $roll 1d6e3 # 1d6 > 3 ?
-  dicebot: 1
-  user: $roll 1d6e3 # 1d6 > 3 ?
-  dicebot: 0
-`
+``` shell
+user: $roll 3d6
+dicebot: [1, 5, 1]
+user: $roll 3d6t
+dicebot: 10
+user: $roll 1d6e3 # 1d6 > 3 ?
+dicebot: 1
+user: $roll 1d6e3 # 1d6 > 3 ?
+dicebot: 0
+```
 
 For a full list of functionality refer to the dice
 [readme](https://github.com/borntyping/python-dice)
@@ -29,6 +30,16 @@ see [here](https://discordpy.readthedocs.io/en/latest/discord.html).
 ## usage
 
 ``` shell
+# in the root of the repository:
+$ pip install -e ./
+# then, system-wide:
 $ dicebot
+```
+
+or 
+
+``` shell
+# in the root of the repository:
+$ python3 src/dicebot/daemon.py
 ```
 
