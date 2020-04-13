@@ -1,5 +1,10 @@
 FROM python:slim
 
-ADD /src/dicebot dicebot/
+WORKDIR dicebot/
 
-CMD python3 dicebot/daemon.py
+ADD ./ ./
+
+RUN pip install -e ./
+
+CMD dicebot
+       
