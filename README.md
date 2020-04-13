@@ -29,6 +29,14 @@ see [here](https://discordpy.readthedocs.io/en/latest/discord.html).
 
 ## usage
 
+first, set the environment variable in some shell
+
+``` shell
+$ export DISCORD_API_KEY={your-key-here}
+# of course you can put this in your .bashrc (or equivalent) for persistence
+```
+then do one of 
+
 ``` shell
 # in the root of the repository:
 $ pip install -e ./
@@ -43,3 +51,10 @@ or
 $ python3 src/dicebot/daemon.py
 ```
 
+or
+
+``` shell
+# in the root of the repository
+$ docker image build -t dicebot ./
+$ docker run dicebot
+```
